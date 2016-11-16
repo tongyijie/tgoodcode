@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+    <groupId>com.tgood.oss</groupId>
+    <artifactId>tgood-base</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  
+  <groupId>com.tgood.oss.base</groupId>
+  <artifactId>tgood-oneService</artifactId>
+  <name>oneService</name>
+
+    <packaging>war</packaging>
+
+  	<properties>
+    	<warname>oneservice</warname>
+  	</properties> 
+    
+	<dependencies>
+	  <dependency>
+		<groupId>com.tgood.oss.platform</groupId>
+  		<artifactId>tgood-common</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	  </dependency>
+	</dependencies>
+
+	<build>
+		<!-- <finalName>${project.artifactId}-${project.version}</finalName> -->
+		<finalName>${warname}</finalName> 
+		<directory>${project.basedir}/target</directory>
+    	<outputDirectory>${project.build.directory}/classes</outputDirectory>
+    	<testOutputDirectory>${project.build.directory}/test-classes</testOutputDirectory>
+    	<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+    	<scriptSourceDirectory>src/main/scripts</scriptSourceDirectory>
+    	<testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>
+    	<resources>
+      		<resource>
+        		<directory>${project.basedir}/src/main/resources</directory>
+      		</resource>
+    	</resources>
+    <testResources>
+      <testResource>
+        <directory>${project.basedir}/src/test/resources</directory>
+      </testResource>
+    </testResources>
+	</build>
+</project> 
+
