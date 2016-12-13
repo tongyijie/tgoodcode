@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>tgood-base</artifactId>
+        <groupId>com.tgood.oss</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.tgood.oss</groupId>
+    <artifactId>tgood-twoService</artifactId>
+    <packaging>war</packaging>
+
+    <properties>
+        <warname>twoservice</warname>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.tgood.oss.platform</groupId>
+            <artifactId>tgood-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <!-- <finalName>${project.artifactId}-${project.version}</finalName> -->
+        <finalName>${warname}</finalName>
+    </build>
+</project>

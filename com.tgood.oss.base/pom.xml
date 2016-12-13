@@ -12,6 +12,7 @@
 
   <modules>
     <module>oneService</module>
+      <module>twoService</module>
   </modules>
   
   <properties>
@@ -182,6 +183,27 @@
 		<artifactId>commons-lang3</artifactId>
 		<version>3.1</version>
     </dependency>
+	  <dependency>
+		  <groupId>redis.clients</groupId>
+		  <artifactId>jedis</artifactId>
+		  <version>2.5.2</version>
+	  </dependency>
+	  <dependency>
+		  <groupId>commons-pool</groupId>
+		  <artifactId>commons-pool</artifactId>
+		  <version>1.6</version>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.apache.kafka</groupId>
+		  <artifactId>kafka-clients</artifactId>
+		  <version>0.10.0.0</version>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.apache.kafka</groupId>
+		  <artifactId>kafka-streams</artifactId>
+		  <version>0.10.0.0</version>
+	  </dependency>
+
   </dependencies>
 
 </project>

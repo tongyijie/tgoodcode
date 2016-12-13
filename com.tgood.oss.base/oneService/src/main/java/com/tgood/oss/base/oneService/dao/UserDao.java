@@ -4,6 +4,7 @@ import com.tgood.oss.base.oneService.dao.mapping.UserMapper;
 import com.tgood.oss.base.oneService.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import redis.clients.jedis.ShardedJedisPool;
 
 import java.util.List;
 
@@ -14,6 +15,9 @@ import java.util.List;
 public class UserDao {
     @Autowired
     UserMapper userMapper;
+
+    @Autowired
+    ShardedJedisPool shardedJedisPool;
 
     public List<User> getAllUsers(){
         return userMapper.getAllUsers();

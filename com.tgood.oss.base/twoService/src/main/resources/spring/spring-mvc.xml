@@ -10,12 +10,10 @@
                         http://www.springframework.org/schema/mvc
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 
-
-    <!-- 将多个配置文件读取到容器中，交给Spring管理 -->
+    <!-- 引入配置文件 -->
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
-                <value>classpath:redis.properties</value>
                 <value>classpath:jdbc.properties</value>
             </list>
         </property>
@@ -25,7 +23,7 @@
     <mvc:annotation-driven />
 
     <!-- 自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器 -->
-    <context:component-scan base-package="com.tgood.oss.base.oneService" />
+    <context:component-scan base-package="com.tgood.oss.base.twoService" />
 
     <!--避免IE执行AJAX时，返回JSON出现下载文件 -->
     <bean id="mappingJacksonHttpMessageConverter"

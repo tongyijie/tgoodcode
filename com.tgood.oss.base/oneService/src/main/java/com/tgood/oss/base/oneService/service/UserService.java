@@ -14,7 +14,7 @@ import java.util.UUID;
 /**
  * Created by Administrator on 2016/11/15 0015.
  */
-@Component
+@Component()
 public class UserService {
 
     @Autowired
