@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.tgood.oss</groupId>
+    <artifactId>com.tgood.oss.maintain</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.tgood.oss</groupId>
+  <artifactId>MaintainWebSite</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <properties>
+    <warname>maintainsite</warname>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.tgood.oss.platform</groupId>
+      <artifactId>tgood-common</artifactId>
+      <version>0.0.2-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <!-- <finalName>${project.artifactId}-${project.version}</finalName> -->
+    <finalName>${warname}</finalName>
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.1.1</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>

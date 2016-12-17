@@ -1,0 +1,2 @@
+该目录存放mybatis的映射文件，文件必须以Mapper.xml结束
+Mapper.xml中定义的方法与dao.mapping下的接口中的方法对应，而且该接口的名字与该Mapper.xml文件名称相同
